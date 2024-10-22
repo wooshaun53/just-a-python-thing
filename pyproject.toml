@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "helloworld"
+version = "2025.0.0"
+
+[project.scripts]
+helloworld = "helloworld:main"
