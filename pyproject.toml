@@ -11,5 +11,5 @@ dependencies = [
 ]
 
 [project.scripts]
-helloworld = "helloworld:main"
-numpydemo = "example:main"
+helloworld = "hello_package.helloworld:main"
+numpydemo = "hello_package.example:main"
