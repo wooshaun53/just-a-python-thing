@@ -13,3 +13,16 @@ dependencies = [
 [project.scripts]
 helloworld = "hello_package.helloworld:main"
 numpydemo = "hello_package.example:main"
+
+[project.optional-dependencies]
+dev = [
+    "mypy",
+    "isort",
+    "flake8",
+    "flake8-pyproject",
+    "black",
+] # to remove and add pre commit
+
+[tool.flake8] # to use ruff
+max-line-length = 120
+exclude = ".venv"
